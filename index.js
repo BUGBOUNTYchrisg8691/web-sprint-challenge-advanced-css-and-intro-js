@@ -336,14 +336,46 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(inData) {
+const myArtists = [{
+        "id": 18,
+        "name": "El Greco",
+        "years": "1541 - 1614",
+        "genre": "Mannerism",
+        "nationality": "Spanish,Greek",
+        "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
+        "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
+        "paintings": 87,
+        "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg/800px-El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Albrecht Dürer",
+        "years": "1471 - 1528",
+        "genre": "Northern Renaissance",
+        "nationality": "German",
+        "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
+        "paintings": 328,
+        "imgsrc": "https://images.metmuseum.org/CRDImages/dp/original/DP102203.jpg"
+    }
+]
+// console.log(myArtists);
+function getHTML(array) {
+  let i;
+  for (i in array) {
     console.log(`<div id="artist">`);
     console.log(`<div class="image">`);
-    console.log(`   <img src="${inData.wikipedia}"/>`);
+    console.log(`   <img src="${array[i].imgsrc}"/>`);
     console.log(`</div>`);
-    console.log(`<div id=`)
+    console.log(`<div class="${array[i].name}">`);
+    console.log(`   <a href="${array[i].wikipedia}">${array[i].name}</a>`);
+    console.log(`</div>`);
+    console.log(`<div class="bio">${array[i].bio}</div>`);
+    console.log(`</div>`);
+  }
 }
 
+getHTML(myArtists);
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
