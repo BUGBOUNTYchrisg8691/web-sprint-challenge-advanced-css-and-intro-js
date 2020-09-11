@@ -411,8 +411,18 @@ function randomize(array) {
     return array;
 }
 
-console.log(randomize(artists));
+function randomize2(array) {
+    let tmpArray = [];
+    for (let i = 0; i < array.length; i++) {
+        tmpArray.push(array[Math.floor(Math.random() * (i + array.length))]);
+    }
+    return tmpArray;
+}
+
+let newA = randomize(artists);
+console.log(newA);
 // randomize(myArtists);
+console.log(randomize2(artists).length);
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 function newGet20s(array) {
@@ -421,4 +431,4 @@ function newGet20s(array) {
     });
 };
 
-console.log(newGet20s(artists));
+// console.log(newGet20s(artists));
