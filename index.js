@@ -337,42 +337,82 @@ The function should console.log 50 chunks of HTML code that match the structure 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
 const myArtists = [{
-        "id": 18,
-        "name": "El Greco",
-        "years": "1541 - 1614",
-        "genre": "Mannerism",
-        "nationality": "Spanish,Greek",
-        "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
-        "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
-        "paintings": 87,
-        "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg/800px-El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg"
-    },
-    {
-        "id": 19,
-        "name": "Albrecht Dürer",
-        "years": "1471 - 1528",
-        "genre": "Northern Renaissance",
-        "nationality": "German",
-        "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
-        "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
-        "paintings": 328,
-        "imgsrc": "https://images.metmuseum.org/CRDImages/dp/original/DP102203.jpg"
-    }
-]
-// console.log(myArtists);
+            "id": 18,
+            "name": "El Greco",
+            "years": "1541 - 1614",
+            "genre": "Mannerism",
+            "nationality": "Spanish,Greek",
+            "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
+            "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
+            "paintings": 87,
+            "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg/800px-El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Albrecht Dürer",
+            "years": "1471 - 1528",
+            "genre": "Northern Renaissance",
+            "nationality": "German",
+            "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
+            "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
+            "paintings": 328,
+            "imgsrc": "https://images.metmuseum.org/CRDImages/dp/original/DP102203.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Francisco Goya",
+            "years": "1746 - 1828",
+            "genre": "Romanticism",
+            "nationality": "Spanish",
+            "bio": "Francisco José de Goya y Lucientes (; Spanish: [fɾanˈθisko xoˈse ðe ˈɣoʝa i luˈθjentes]; 30 March 1746 – 16 April 1828) was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries and throughout his long career was a commentator and chronicler of his era. Immensely successful in his lifetime, Goya is often referred to as both the last of the Old Masters and the first of the moderns.  He was also one of the great contemporary portraitists.He was born to a modest family in 1746 in the village of Fuendetodos in Aragon. He studied painting from age 14 under José Luzán y Martinez and moved to Madrid to study with Anton Raphael Mengs. He married Josefa Bayeu in 1773; their life was characterised by an almost constant series of pregnancies and miscarriages, and only one child, a son, survived into adulthood. Goya became a court painter to the Spanish Crown in 1786 and this early portion of his career is marked by portraits of the Spanish aristocracy and royalty, and Rococo style tapestry cartoons designed for the royal palace.",
+            "wikipedia": "http://en.wikipedia.org/wiki/Francisco_Goya",
+            "paintings": 291
+        },
+        {
+            "id": 17,
+            "name": "Frida Kahlo",
+            "years": "1907 - 1954",
+            "genre": "Primitivism,Surrealism",
+            "nationality": "Mexican",
+            "bio": "Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist.",
+            "wikipedia": "http://en.wikipedia.org/wiki/Frida_Kahlo",
+            "paintings": 120
+        },
+        {
+            "id": 18,
+            "name": "El Greco",
+            "years": "1541 - 1614",
+            "genre": "Mannerism",
+            "nationality": "Spanish,Greek",
+            "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
+            "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
+            "paintings": 87
+        },
+        {
+            "id": 19,
+            "name": "Albrecht Dürer",
+            "years": "1471 - 1528",
+            "genre": "Northern Renaissance",
+            "nationality": "German",
+            "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
+            "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
+            "paintings": 328
+        }
+    ]
+    // console.log(myArtists);
 function getHTML(array) {
-  let i;
-  for (i in array) {
-    console.log(`<div id="artist">`);
-    console.log(`<div class="image">`);
-    console.log(`   <img src="${array[i].imgsrc}"/>`);
-    console.log(`</div>`);
-    console.log(`<div class="${array[i].name}">`);
-    console.log(`   <a href="${array[i].wikipedia}">${array[i].name}</a>`);
-    console.log(`</div>`);
-    console.log(`<div class="bio">${array[i].bio}</div>`);
-    console.log(`</div>`);
-  }
+    let i;
+    for (i in array) {
+        console.log(`<div id="artist">`);
+        console.log(`<div class="image">`);
+        console.log(`   <img src="${array[i].imgsrc}"/>`);
+        console.log(`</div>`);
+        console.log(`<div class="${array[i].name}">`);
+        console.log(`   <a href="${array[i].wikipedia}">${array[i].name}</a>`);
+        console.log(`</div>`);
+        console.log(`<div class="bio">${array[i].bio}</div>`);
+        console.log(`</div>`);
+    }
 }
 
 getHTML(myArtists);
@@ -380,30 +420,27 @@ getHTML(myArtists);
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(array) {
-  let arri = [];
-  let arrj = [];
-  let arrx = [];
-  let i, j, x;
-  for(i = array.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    x = array[i];
-    array[i] = array[j];
-    array[j] = x;
-    arri.push(i);
-    arrj.push(j);
-    arrx.push(x); 
-  }
-  console.log(arri, arrj, arrx);
+    let i;
+    let j;
+    let x;
+    for (i = array.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = array[i];
+        array[i] = array[j];
+        array[j] = x;
+    }
+    return array;
 }
 
-// console.log(randomize(artists));
-// randomize(artists);
+
+console.log(randomize(artists));
+// randomize(myArtists);
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 function newGet20s(array) {
-  return array.filter(function(a) {
-    return a.years.split(" - ")[0] >= 1900 && a.years.split(" - ")[1] < 2000;
-  });
+    return array.filter(function(a) {
+        return a.years.split(" - ")[0] >= 1900 && a.years.split(" - ")[1] < 2000;
+    });
 };
 
 console.log(newGet20s(artists));
