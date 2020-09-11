@@ -267,6 +267,7 @@ removeArtist(artists, 0);
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
+
 id: 20,
 name: Your Name Here, 
 years: Your Birth Year - current day,
@@ -276,11 +277,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist( /* Code here */ ) {
-
-    /* Code here */
-
+const me = {
+    id: 20,
+    name: "Christopher Gudmestad Girvin",
+    years: "1991 - current",
+    genre: "Web Design",
+    nationality: "American",
+    bio: "Broccoli is an application development environment, simplifying a NoSQL database with the object. A JavaScript code linter. Revealing Module Pattern is a familiar class-style OO framework, extensive Ajax programming with a way for graphic applications using AMD is a browser. API that the language for front-end dependencies. Wide Web applications."
 }
+
+function addArtist(newArtObj) {
+    artists.push(newArtObj)
+}
+
+addArtist(me);
+console.log(artists[artists.length - 1])
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
