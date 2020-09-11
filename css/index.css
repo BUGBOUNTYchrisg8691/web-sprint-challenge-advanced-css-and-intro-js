@@ -189,3 +189,23 @@ button:hover{
         text-align: center;
     }
 }
+
+@media (max-width: 700px) {
+    nav {
+        width: 60%;
+    }
+
+    nav a {
+        margin: 5px 4px;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        width: 40%;
+    }
+
+    nav a {
+        font-weight: 10px;
+    }
+}
